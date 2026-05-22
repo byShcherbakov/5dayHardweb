@@ -20,6 +20,16 @@ downbtn.addEventListener("click", (e) => {
     chanchSlide('down');
 })
 
+document.addEventListener("keydown",
+    event =>{
+        if(event.key === "ArrowUp"){
+            chanchSlide('up');
+        }else if(event.key === "ArrowDown"){
+            chanchSlide('down');
+        }
+    })
+
+
 function chanchSlide( direction) {
     if( direction === "up" ) {
         res++
